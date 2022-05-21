@@ -5,9 +5,13 @@
 
 body {
   background-color: #fff7eb;
-  background-image: url(./images/dirtybird3.svg);
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#logo {
+  position: absolute;
+  top: 25px;
 }
 
 .search-params {
