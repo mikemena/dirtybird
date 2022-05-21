@@ -1,13 +1,15 @@
-const Thing = () => {
-  return React.createElement("div", {}, [
-    React.createElement("h1", {}, "Dirty Bird"),
-  ]);
-};
+import { render } from "react-dom";
+import Item from "./Item";
 
 const App = () => {
-  return React.createElement("div", {}, [
-    React.createElement("h1", {}, "Adopt Me!"),
-    React.createElement(Thing),
-  ]);
+  return (
+    <div>
+      <h1>Dirty Bird</h1>
+      <Item name="Shirt" description="cool shirt" price="$45.00" />
+      <Item name="Pants" description="cool pants" price="$70.00" />
+      <Item name="Sox" description="cool sox" price="$25.00" />
+    </div>
+  );
 };
-ReactDOM.render(React.createElement(App), document.getElementById("root"));
+
+render(<App />, document.getElementById("root"));
