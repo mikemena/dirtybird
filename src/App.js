@@ -1,13 +1,13 @@
 const Thing = () => {
-  return React.createElement('div', {}, [
-    React.createElement('h1', {}, 'Dirty Bird')
+  return React.createElement("div", {}, [
+    React.createElement("h1", {}, "Dirty Bird"),
   ]);
 };
 
 const App = () => {
-  return React.createElement('div', {}, [
-    React.createElement('h1', {}, 'Adopt Me!'),
-    React.createElement(Thing)
+  return React.createElement("div", {}, [
+    React.createElement("h1", {}, "Adopt Me!"),
+    React.createElement(Thing),
   ]);
 };
-ReactDOM.render(React.createElement(App), document.getElementById('root'));
+ReactDOM.render(React.createElement(App), document.getElementById("root"));
