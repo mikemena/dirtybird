@@ -1,25 +1,27 @@
 {
-  "name": "store",
+  "name": "dirtybird",
   "version": "1.0.0",
-  "description": "Course repo:",
+  "description": "dirty bird",
   "main": "index.js",
   "scripts": {
-    "format": "prettier --write \"src/**/*.{js,jsx}\""
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "dev": "parcel src/index.html"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tokyo-lab/store.git"
+    "url": "git+https://github.com/tokyo-lab/dirtybird.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tokyo-lab/store/issues"
+    "url": "https://github.com/tokyo-lab/dirtybird/issues"
   },
-  "homepage": "https://github.com/tokyo-lab/store#readme",
+  "homepage": "https://github.com/tokyo-lab/dirtybird#readme",
   "devDependencies": {
     "eslint": "^8.8.0",
     "eslint-config-prettier": "^8.3.0",
+    "parcel": "^2.5.0",
     "prettier": "^2.6.2"
   }
 }
