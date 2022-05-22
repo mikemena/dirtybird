@@ -2,6 +2,7 @@ import { useState } from "react";
 
 const Search = () => {
   const [location, setLocation] = useState("");
+  console.log(location);
   return (
     <div className="search-params">
       <form>
