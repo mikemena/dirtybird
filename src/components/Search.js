@@ -7,13 +7,21 @@ const Search = () => {
   const [item, setItem] = useState("");
   console.log(location);
 
+  // Fetch Items
+  const fetchItems = async () => {
+    const res = await fetch(`http://localhost:3001/items`);
+    const items = await res.json();
+    return items;
+  };
+
   useEffect(() => {
     requestItems;
   });
+
   return (
     <div className="search-params">
       <form>
-        <label htmlFor="location">
+        {/* <label htmlFor="location">
           Location {location}
           <input
             id="location"
@@ -21,7 +29,7 @@ const Search = () => {
             placeholder="Location"
             onChange={(e) => setLocation(e.target.value)}
           />
-        </label>
+        </label> */}
         <label htmlFor="item">
           item
           <select
