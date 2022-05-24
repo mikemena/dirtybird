@@ -18,7 +18,12 @@ const Search = () => {
   return (
     <div>
       {items.map((item) => (
-        <div key={item.id}>{item.name}</div>
+        <div className="item" key={item.id}>
+          <h1>{item.name}</h1>
+          <p>{item.details}</p>
+          <p>{item.material}</p>
+          <p>{item.price}</p>
+        </div>
       ))}
     </div>
   );
