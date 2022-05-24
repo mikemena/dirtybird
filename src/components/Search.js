@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const ITEMS = ["Asic", "Immersion"];
 
@@ -6,6 +6,10 @@ const Search = () => {
   const [location, setLocation] = useState("");
   const [item, setItem] = useState("");
   console.log(location);
+
+  useEffect(() => {
+    requestItems;
+  });
   return (
     <div className="search-params">
       <form>

@@ -1,0 +1,26 @@
+{
+  "items": [
+    {
+      "name": "Box 1",
+      "material": "wood",
+      "detail": "",
+      "brand": "2021-08-22",
+      "price": "$200",
+      "id": 9
+    },
+    {
+      "name": "Box 2",
+      "material": "aluminum",
+      "brand": "2021-11-28",
+      "price": "$330",
+      "id": 10
+    },
+    {
+      "name": "Box 3",
+      "material": "aluminum",
+      "brand": "2021-11-28",
+      "price": "$280",
+      "id": 11
+    }
+  ]
+}
