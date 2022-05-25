@@ -6,10 +6,10 @@ const Items = () => {
   // console.log(location);
 
   useEffect(() => {
-    requestPets();
+    requestItems();
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-  async function requestPets() {
+  async function requestItems() {
     const res = await fetch(`http://localhost:3001/items`);
     const items = await res.json();
     setItems(items);
