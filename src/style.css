@@ -9,10 +9,9 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#logo {
-  position: fixed;
-  left: 0;
-  top: 0;
+.logo {
+  width: 400px;
+  height: 200px;
 }
 
 .search-params {
@@ -60,10 +59,10 @@ body {
   border-bottom: #3b3b3c 2px solid;
 }
 
-.item img {
+/* .item img {
   width: 100px;
   min-height: 100px;
-}
+} */
 
 .info {
   float: left;

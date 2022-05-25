@@ -1,15 +1,18 @@
 import { render } from "react-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Search from "./components/Search";
+import Header from "./components/Header";
+import Details from "./components/Details";
 
 const App = () => {
   return (
-    <div>
-      <Search />
-      <h1>Dirty Bird</h1>
-      {/* <Item name="Shirt" description="cool shirt" price="$45.00" />
-      <Item name="Pants" description="cool pants" price="$70.00" />
-      <Item name="Sox" description="cool sox" price="$25.00" /> */}
-    </div>
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/details/:id" element={<Details />} />
+        <Route path="/" element={<Search />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 
