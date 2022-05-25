@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
-const Search = () => {
+const Items = () => {
   const [items, setItems] = useState([]);
   // console.log(location);
 
@@ -20,9 +20,10 @@ const Search = () => {
     <div>
       {items.map((item) => (
         <div className="item" key={item.id}>
-          <Link to={`/details/${id}`} className="pet">
+          <Link to={`/details/${item.id}`} className="pet">
             <h1>{item.name}</h1>
           </Link>
+
           <p>{item.details}</p>
           <p>{item.material}</p>
           <p>{item.price}</p>
@@ -32,4 +33,4 @@ const Search = () => {
   );
 };
 
-export default Search;
+export default Items;
