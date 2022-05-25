@@ -17,16 +17,18 @@ const Search = () => {
   }
 
   return (
-    <Link to={`/details/${id}`} className="pet">
+    <div>
       {items.map((item) => (
         <div className="item" key={item.id}>
-          <h1>{item.name}</h1>
+          <Link to={`/details/${id}`} className="pet">
+            <h1>{item.name}</h1>
+          </Link>
           <p>{item.details}</p>
           <p>{item.material}</p>
           <p>{item.price}</p>
         </div>
       ))}
-    </Link>
+    </div>
   );
 };
 

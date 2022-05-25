@@ -3,11 +3,11 @@ import Logo from "../images/dirtybird1.svg";
 
 const Header = () => {
   return (
-    <Link to="/">
-      <div className="item">
+    <div className="item">
+      <Link to="/">
         <img src={Logo} className="logo"></img>
-      </div>
-    </Link>
+      </Link>
+    </div>
   );
 };
 
