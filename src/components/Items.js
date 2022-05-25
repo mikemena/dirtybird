@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Items = () => {
   const [items, setItems] = useState([]);
@@ -23,7 +23,6 @@ const Items = () => {
           <Link to={`/details/${item.id}`} className="pet">
             <h1>{item.name}</h1>
           </Link>
-
           <p>{item.details}</p>
           <p>{item.material}</p>
           <p>{item.price}</p>
