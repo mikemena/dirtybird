@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Search = () => {
   const [items, setItems] = useState([]);
@@ -16,7 +17,7 @@ const Search = () => {
   }
 
   return (
-    <div>
+    <Link to={`/details/${id}`} className="pet">
       {items.map((item) => (
         <div className="item" key={item.id}>
           <h1>{item.name}</h1>
@@ -25,7 +26,7 @@ const Search = () => {
           <p>{item.price}</p>
         </div>
       ))}
-    </div>
+    </Link>
   );
 };
 
