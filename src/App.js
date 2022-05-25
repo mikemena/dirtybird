@@ -1,18 +1,21 @@
 import { render } from "react-dom";
+import { StrictMode } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Search from "./components/Search";
+import Items from "./components/Items";
 import Header from "./components/Header";
 import Details from "./components/Details";
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Header />
-      <Routes>
-        <Route path="/details/:id" element={<Details />} />
-        <Route path="/" element={<Search />} />
-      </Routes>
-    </BrowserRouter>
+    <StrictMode>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Items />} />
+          <Route path="/details/:id" element={<Details />} />
+        </Routes>
+      </BrowserRouter>
+    </StrictMode>
   );
 };
 
